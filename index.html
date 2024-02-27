@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Solar System</title>
+<style>
+  body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#universe {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sun {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30vw;
+  transform: translateY(-50%);
+}
+
+#sun a img {
+  transform: translateX(-50%);
+  transition: transform 0.3s ease;
+}
+
+#sun a:hover img {
+  transform: scale(1.1);
+}
+
+#planets {
+    position: absolute;
+    top: 50%;
+    left: 15vw;
+
+    width: 80vw;
+
+    display: flex;
+    gap: 5vw;
+    justify-content: space-between;
+}
+
+.planet {
+  width: 5vw; 
+  transition: transform 0.3s ease;
+}
+
+.planet:hover {
+  transform: scale(1.1);
+}
+
+.text {
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <div id="universe">
+        <video autoplay muted loop id="background-video">
+        <source src="media/videos/galaxy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+
+        <div style="position: absolute; top: 5vh; left: 50vw; transform: translateX(-50%);">
+            <p style="font-size: 5vw; font-style: oblique; color: white; text-align: center;">Solar System</p>
+        </div>
+
+        <div style="position: absolute; bottom: 5vh; left: 50vw; transform: translateX(-50%);">
+            <p style="font-size: 1vw; color: grey; text-align: center;">Please note that this solar system page serves as a demonstration, utilizing GenAI for content creation. The backdrop video has been crafted using RunwayML's generative tools. Imagery is produced with the assistance of DALL·E 3, and the descriptive content as well as the website framework have been developed through the capabilities of OpenAI's GPT-4.0.</p>
+        </div>
+
+        <div id="sun">
+            <a href="planets/sun.html">
+                <img src="media/pics/sun.png" alt="Sun" width="50%" height="50%"> 
+                <p style="font-size: 2vw; color: white;">Sun</p>
+            </a>
+        </div>
+
+        <div id="planets">
+            <a href="planets/mercury.html">
+                <img src="media/pics/mercury.png" alt="Mercury" class="planet">
+                <p class="text">Mercury</p>
+            </a>
+                
+            <a href="planets/venus.html">
+                <img src="media/pics/venus.png" alt="Venus" class="planet">
+                <p class="text">Venus</p>
+            </a>
+            
+            <a href="planets/earth.html">
+                <img src="media/pics/earth.png" alt="Earth" class="planet">
+                <p class="text">Earth</p>
+            </a>
+            
+            <a href="planets/mars.html">
+                <img src="media/pics/mars.png" alt="Mars" class="planet">
+                <p class="text">Mars</p>
+            </a>
+            
+            <a href="planets/jupiter.html">
+                <img src="media/pics/jupiter.png" alt="Jupiter" class="planet">
+                <p class="text">Jupiter</p>
+            </a>
+            
+            <a href="planets/saturn.html">
+                <img src="media/pics/saturn.png" alt="Saturn" class="planet">
+                <p class="text">Saturn</p>
+            </a>
+            
+            <a href="planets/uranus.html">
+                <img src="media/pics/uranus.png" alt="Uranus" class="planet">
+                <p class="text">Uranus</p>
+            </a>
+            
+            <a href="planets/neptune.html">
+                <img src="media/pics/neptune.png" alt="Neptune" class="planet">
+                <p class="text">Neptune</p>
+            </a>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sun</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  .header {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .planet-info {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  .planet-info img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #555;
+  }
+  .description {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .back-button {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #333; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .back-button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Planet Description</h1>
+</div>
+
+<div class="container">
+  <div class="planet-info">
+    <img src="../media/pics/sun.png" alt="Sun">
+    <div class="description">
+      <h2>Sun</h2>
+      <p>
+        The Sun, a colossal star at the heart of our solar system, is a perfect sphere of hot plasma, radiating energy through nuclear fusion at its core. This incandescent giant is marked by solar flares and magnetic storms, creating a spectacle of vibrant prominences and coronal loops that dance across its surface. These solar activities can eject billions of tons of particles into space, which can sometimes reach Earth and drive spectacular auroral displays. It is the ultimate source of light and warmth for all life on Earth, sitting at an average distance of about 93 million miles away, yet its presence is felt across the vast reaches of the solar system. The Sun’s gravitational pull keeps our planet in a steady orbit, dictating the rhythms of seasons, weather, and tides.
+      </p>
+    </div>
+  </div>
+</div>
+
+<a href="../index.html" class="back-button">Back to Solar System</a>
+
+</body>
+</html>

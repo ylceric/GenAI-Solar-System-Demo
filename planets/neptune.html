@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neptune</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  .header {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .planet-info {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  .planet-info img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #555;
+  }
+  .description {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .back-button {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #333; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .back-button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Planet Description</h1>
+</div>
+
+<div class="container">
+  <div class="planet-info">
+    <img src="../media/pics/neptune.png" alt="Neptune">
+    <div class="description">
+      <h2>Neptune</h2>
+      <p>
+        Neptune, the farthest known planet from the Sun, is an ice giant shrouded in deep blue. It has strong and fast winds and is known for the Great Dark Spot, a storm similar to Jupiter's Great Red Spot.
+      </p>
+    </div>
+  </div>
+</div>
+
+<a href="../index.html" class="back-button">Back to Solar System</a>
+
+</body>
+</html>
